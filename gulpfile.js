@@ -31,7 +31,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('scripts', function() {
-    return gulp.src(['js/*.js'])
+    return gulp.src(['src/js/*.js'])
         .pipe(uglify())
         .pipe(concat('theme.js'))
         .pipe(gulp.dest('assets/'));
