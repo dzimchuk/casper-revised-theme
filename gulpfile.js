@@ -14,7 +14,7 @@ var cssnano = require('cssnano');
 var customProperties = require('postcss-custom-properties');
 var easyimport = require('postcss-easy-import');
 
-gulp.task('css', function () {
+gulp.task('styles', function () {
     var processors = [
         easyimport,
         customProperties,
@@ -23,7 +23,7 @@ gulp.task('css', function () {
         cssnano()
     ];
     
-    return gulp.src('./css/**/*.scss')
+    return gulp.src('./src/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
         .pipe(concat('theme.css'))
@@ -38,11 +38,11 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('css/**/*.scss', ['css']);
-    gulp.watch('js/*.js', ['scripts']);
+    gulp.watch('src/sass/**/*.scss', ['styles']);
+    gulp.watch('src/js/*.js', ['scripts']);
 });
 
-gulp.task('build', ['css', 'scripts'], function () {
+gulp.task('build', ['styles', 'scripts'], function () {
 });
 
 gulp.task('zip', ['build'], function() {
@@ -54,8 +54,7 @@ gulp.task('zip', ['build'], function() {
         '**',
         '!node_modules', '!node_modules/**',
         '!dist', '!dist/**',
-        '!css', '!css/**',
-        '!js', '!js/**',
+        '!src', '!src/**',
         '!gulpfile.js', '!package-lock.json'
     ])
         .pipe(zip(filename))
