@@ -1208,6 +1208,7 @@ body.page-template .post-title {
 .post-footer .share svg {
     height: 1.8rem;
     fill: #BBC7CC;
+    transition: fill 0.3s ease;
 }
 
 .post-footer .share .icon-twitter svg {
