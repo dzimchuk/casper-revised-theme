@@ -105,9 +105,10 @@
     text-indent: 0;
 }
 
-.author-meta {
+.author-profile .author-meta {
     margin: 1.6rem 0;
 }
+
 /* Location, website, and link */
 .author-profile .author-meta {
     margin: 2rem 0;
@@ -115,13 +116,21 @@
     letter-spacing: 0.01rem;
     font-size: 1.7rem;
 }
-.author-meta span {
+
+.author-profile .author-meta span {
     display: inline-block;
     margin: 0 2rem 1rem 0;
     word-wrap: break-word;
 }
-.author-meta a {
+
+.author-profile .author-meta a {
     text-decoration: none;
+}
+
+.author-profile .author-meta svg {
+    height: 1.4rem;
+    fill: #BBC7CC;
+    margin-right: 0.5rem;
 }
 
 /* Turn off meta for page2+ to make room for extra

@@ -119,6 +119,28 @@
    .author-meta a:hover {
        color: #111;
    }
+
+   .post-footer {
+       .author-meta {
+           margin: 1.6rem 0;
+
+           a {
+            text-decoration: none;
+           }
+
+           span {
+            display: inline-block;
+            margin: 0 2rem 1rem 0;
+            word-wrap: break-word;
+           }
+
+           svg {
+            height: 1.15rem;
+            fill: #BBC7CC;
+            margin-right: 0.3rem;
+           }
+       }
+   }
    
    /* Create some space to the right for the share links */
    .post-footer .author {
@@ -147,7 +169,7 @@
    
    .post-footer .share a {
        display: inline-block;
-       margin: 1rem 1.6rem 1.6rem 0;
+       margin: 1rem 1.5rem 1.6rem 0;
        text-decoration: none;
    }
    
@@ -156,14 +178,12 @@
    }
    
    .post-footer .share svg {
-       height: 1.8rem;
+       height: 2rem;
        fill: #BBC7CC;
        transition: fill 0.3s ease;
    }
    
-   .post-footer .share .icon-twitter svg {
-       height: 2rem;
-   
+   .post-footer .share .icon-twitter svg {   
        &:hover {
            fill: #1da1f2;
        }
@@ -171,7 +191,7 @@
    
    .post-footer .share .icon-facebook svg {
        &:hover {
-           fill: #3b5998;
+           fill: #4267b2;
        }
    }
    

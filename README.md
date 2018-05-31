@@ -31,3 +31,7 @@ npm install -g nodemon@latest
 
 nodemon current/index.js --watch content/themes/casper-revised-theme --ext hbs,js,css
 ```
+
+## Credits
+
+SVG icons by [Font Awesome](https://fontawesome.com/), licensed under the [Creative Commons Attribution 4.0 International](https://fontawesome.com/license) license.
