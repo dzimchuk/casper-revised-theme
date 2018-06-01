@@ -24,31 +24,6 @@
         margin-bottom: 2rem;
     }
 
-    .blog-logo {
-        padding: 5px;
-    }
-
-    .blog-logo img {
-        height: 30px;
-    }
-
-    .menu-button {
-        padding: 0 5px;
-        border-radius: 0;
-        border-width: 0;
-        color: #2e2e2e;
-        background: transparent;
-    }
-    .menu-button:hover {
-        color: #2e2e2e;
-        border-color: transparent;
-        background: none;
-    }
-    body.nav-opened .menu-button {
-        background: none;
-        border: transparent;
-    }
-
     .main-nav.overlay a:hover {
         color: #fff;
         border-color: transparent;
@@ -94,10 +69,6 @@
         margin-right: 16px;
         padding-bottom: 2rem;
         line-height: 1.65em;
-    }
-
-    .post-date {
-        display: none;
     }
 
     .post-template .post-header,
@@ -260,14 +231,6 @@
         display: none;
     }
 
-    .gh-subscribe {
-        padding: 15px;
-    }
-
-    .gh-subscribe form {
-        margin-top: 10px;
-    }
-
     .read-next {
         margin-top: 2rem;
         margin-bottom: -37px;
@@ -276,5 +239,4 @@
     .read-next .post {
         width: 100%;
     }
-
 }
