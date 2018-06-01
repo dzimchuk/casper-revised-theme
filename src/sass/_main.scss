@@ -203,14 +203,6 @@ body.page-template .post-title {
     color: #9EABB3;
 }
 
-.author-thumb {
-    width: 24px;
-    height: 24px;
-    float: left;
-    margin-right: 9px;
-    border-radius: 100%;
-}
-
 .post-meta a {
     color: #9EABB3;
     text-decoration: none;
@@ -228,9 +220,9 @@ body.page-template .post-title {
 
 .post-date {
     display: inline-block;
-    margin-left: 8px;
-    padding-left: 12px;
-    border-left: #d5dbde 1px solid;
+    padding: 0;
+    margin: 0;
+    border: none;
     text-transform: uppercase;
     font-size: 1.3rem;
     white-space: nowrap;
