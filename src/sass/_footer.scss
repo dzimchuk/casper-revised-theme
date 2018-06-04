@@ -1,66 +1,63 @@
 /* ==========================================================================
    Footer - The bottom of every page
    ========================================================================== */
+$footer-color: #BBC7CC;
 
 .site-footer {
+    overflow: hidden;
     position: relative;
-    margin: 8rem 0 0 0;
-    padding: 1rem 15px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1rem;
-    line-height: 1.75em;
-    color: #BBC7CC;
-}
+    
+    margin: 3rem 0 0 0;
+    padding: 2rem 15px;
+    
+    background: #242526;
 
-.site-footer a {
-    color: #BBC7CC;
-    text-decoration: none;
-    font-weight: bold;
-}
+    .copyright {
+        display: block;
+        float: left;
 
-.site-footer a:hover {
-    border-bottom: #bbc7cc 1px solid;
-}
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.4rem;
+        font-weight: normal;
+        color: $footer-color;
 
-.site-footer-nav {
-    display: block;
-    /*width: 45%;*/
-    float: right;
-    text-align: right;
-}
+        a {
+            color: $footer-color;
+            text-decoration: none;
+    
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
 
-.copyright {
-    display: block;
-    width: 45%;
-    float: left;
-}
+    .site-footer-nav {
+        display: block;
+        float: right;
+        padding-top: 0.4rem;
 
-.site-footer-nav svg {
-    height: 2rem;
-    fill: #BBC7CC;
-    transition: fill 0.3s ease;
-}
+        a {
+            margin: 0 0.9rem;
 
-.site-footer-nav .social-link-twitter svg {   
-    &:hover {
-        fill: #1da1f2;
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+
+        svg {
+            height: 1.9rem;
+            fill: $footer-color;
+            transition: fill 0.3s ease;
+
+            &:hover {
+                fill: #fff;
+            }
+        }
     }
 }
 
-.site-footer-nav .social-link-facebook svg {
-    &:hover {
-        fill: #4267b2;
-    }
-}
-
-.site-footer-nav .social-link-google-plus svg {
-    &:hover {
-        fill: #dc4e41;
-    }
-}
-
-.site-footer-nav .social-link-linkedin svg {
-    &:hover {
-        fill: #0077b5;
-    }
+.site-footer-inner {
+    width: 80%;
+    max-width: 710px;
+    margin: 0 auto;
 }
