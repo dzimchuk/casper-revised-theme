@@ -46,11 +46,6 @@
 
     }
 
-    .nav-close {
-        position: absolute;
-        top: 18px;
-    }
-
     .nav ul {
         padding: 60px 9% 5%;
     }
@@ -220,14 +215,5 @@
 
     .paged .main-header .page-description {
         display: none;
-    }
-
-    .read-next {
-        margin-top: 2rem;
-        margin-bottom: -37px;
-    }
-
-    .read-next .post {
-        width: 100%;
     }
 }
