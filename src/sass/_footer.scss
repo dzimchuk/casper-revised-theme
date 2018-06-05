@@ -7,7 +7,7 @@ $footer-color: #BBC7CC;
     overflow: hidden;
     position: relative;
     
-    margin: 3rem 0 0 0;
+    margin: 2rem 0 0 0;
     padding: 2rem 15px;
     
     background: #242526;
@@ -37,7 +37,7 @@ $footer-color: #BBC7CC;
         padding-top: 0.4rem;
 
         a {
-            margin: 0 0.9rem;
+            margin: 0 0.8rem;
 
             &:last-of-type {
                 margin-right: 0;
@@ -45,7 +45,7 @@ $footer-color: #BBC7CC;
         }
 
         svg {
-            height: 1.9rem;
+            height: 1.8rem;
             fill: $footer-color;
             transition: fill 0.3s ease;
 
@@ -60,4 +60,27 @@ $footer-color: #BBC7CC;
     width: 80%;
     max-width: 710px;
     margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .site-footer {
+        
+        margin-top: 1rem;
+        
+        .copyright,
+        .site-footer-nav {
+            float: none;
+            clear: both;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .site-footer-nav {
+            margin-top: 0.4em;
+        }
+    }
+
+    .site-footer-nav a:first-of-type {
+        margin-left: 0;
+    }
 }

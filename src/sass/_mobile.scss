@@ -141,11 +141,6 @@
         font-size: 2.8rem;
     }
 
-    .post-template .site-footer,
-    .page-template .site-footer {
-        margin-top: 0;
-    }
-
     .post-content img {
         padding: 0;
         width: calc(100% + 32px); /* expand with to image + margins */
@@ -196,10 +191,6 @@
 
     .page-number {
         display: block;
-    }
-
-    .site-footer {
-        margin-top: 3rem;
     }
 
     .author-profile {
