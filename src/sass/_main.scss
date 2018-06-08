@@ -161,12 +161,6 @@ body.page-template .post-title {
     text-decoration: underline;
 }
 
-.user-meta {
-    position: relative;
-    padding: 0.3rem 40px 0 100px;
-    min-height: 77px;
-}
-
 .post-date {
     display: inline-block;
     padding: 0;
@@ -175,41 +169,4 @@ body.page-template .post-title {
     text-transform: uppercase;
     font-size: 1.3rem;
     white-space: nowrap;
-}
-
-.user-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.user-name {
-    display: block;
-    font-weight: 700;
-}
-
-.user-bio {
-    display: block;
-    max-width: 440px;
-    font-size: 1.4rem;
-    line-height: 1.5em;
-}
-
-.publish-meta {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 4.3rem 0 4rem 0;
-    text-align: right;
-}
-
-.publish-heading {
-    display: block;
-    font-weight: 700;
-}
-
-.publish-date {
-    display: block;
-    font-size: 1.4rem;
-    line-height: 1.5em;
 }
