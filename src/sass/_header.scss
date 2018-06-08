@@ -1,0 +1,53 @@
+.main-header {
+    position: relative;
+    display: table;
+    width: 100%;
+    min-height: 160px;
+    max-height: 40vh;
+    margin-bottom: 5rem;
+    text-align: center;
+    background: #222 no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.main-header .inner {
+    width: 80%;
+}
+
+.no-cover.main-header {
+    background: #f5f8fa;
+}
+
+.post-head.main-header {
+    height: 65vh;
+    min-height: 180px;
+}
+
+.no-cover.post-head.main-header {
+    height: 85px;
+    min-height: 0;
+    margin-bottom: 0;
+    background: transparent;
+}
+
+.tag-head.main-header {
+    height: 40vh;
+    min-height: 180px;
+}
+
+.author-head.main-header {
+    height: 40vh;
+    min-height: 180px;
+}
+
+.no-cover.author-head.main-header {
+    height: 10vh;
+    min-height: 100px;
+    background: transparent;
+}
+
+/* On page2+ make all the headers smaller */
+.paged .main-header {
+    max-height: 30vh;
+}

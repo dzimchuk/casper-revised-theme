@@ -73,11 +73,6 @@
     width: auto;
 }
 
-/* On page2+ make all the headers smaller */
-.paged .main-header {
-    max-height: 30vh;
-}
-
 /* On page2+ show extra pagination controls at the top of post list */
 .paged .extra-pagination {
     display: block;
