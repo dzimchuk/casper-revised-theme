@@ -4,21 +4,6 @@
 
 @media only screen and (max-width: 500px) {
 
-    .main-header {
-        margin-bottom: 15px;
-        height: 40vh;
-    }
-
-    .no-cover.main-header {
-        height: 30vh;
-    }
-
-    .paged .main-header {
-        max-height: 20vh;
-        min-height: 160px;
-        padding: 10% 0;
-    }
-
     .main-nav {
         padding: 5px;
         margin-bottom: 2rem;
@@ -192,15 +177,6 @@
         padding-bottom: 2rem;
     }
 
-    .post-head.main-header {
-        height: 30vh;
-    }
-
-    .tag-head.main-header,
-    .author-head.main-header {
-        height: 20vh;
-    }
-
     .post-footer .author-image {
         top: -60px;
     }
@@ -211,9 +187,5 @@
 
     .author-profile .author-meta span {
         font-size: 1.4rem;
-    }
-
-    .paged .main-header .page-description {
-        display: none;
     }
 }
