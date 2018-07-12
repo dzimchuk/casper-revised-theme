@@ -2,7 +2,7 @@
    Media Queries - Smaller than 900px
    ========================================================================== */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: $tablet-width-threshold) {
 
     blockquote {
         margin-left: 0;

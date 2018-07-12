@@ -14,6 +14,10 @@
         if (typeof github_url !== 'undefined') { updateLink('.social-github', github_url); }
         if (typeof linkedin_url !== 'undefined') { updateLink('.social-linkedin', linkedin_url); }
         if (typeof google_plus_url !== 'undefined') { updateLink('.social-google-plus', google_plus_url); }
+
+        var mainNav = document.querySelector('.main-nav');
+        var headroom  = new Headroom(mainNav);
+        headroom.init(); 
     });
 
 })(jQuery);

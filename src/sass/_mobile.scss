@@ -2,38 +2,16 @@
    Media Queries - Smaller than 500px
    ========================================================================== */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: $mobile-width-threshold) {
 
-    .main-nav {
-        padding: 5px;
-        margin-bottom: 2rem;
-    }
-
-    .main-nav.overlay a:hover {
-        color: #fff;
-        border-color: transparent;
-        background: transparent;
-    }
-
-    .no-cover .main-nav.overlay {
-        background: none;
-    }
-    .no-cover .main-nav.overlay .menu-button {
-        border: none;
-    }
-
-    .main-nav.overlay .menu-button {
-        border-color: transparent;
-    }
-
-    .nav-title {
+    /* .nav-title {
         top: 25px;
 
     }
 
     .nav ul {
         padding: 60px 9% 5%;
-    }
+    } */
 
     .inner,
     .pagination {
