@@ -51,9 +51,9 @@
 }
 
 /* On page2+ make all the headers smaller */
-.paged .main-header {
+/* .paged .main-header {
     max-height: 30vh;
-}
+} */
 
 @media only screen and (max-width: $tablet-width-threshold) {
     .main-header {

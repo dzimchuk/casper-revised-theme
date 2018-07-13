@@ -16,7 +16,13 @@
         if (typeof google_plus_url !== 'undefined') { updateLink('.social-google-plus', google_plus_url); }
 
         var mainNav = document.querySelector('.main-nav');
-        var headroom  = new Headroom(mainNav);
+        var headroom  = new Headroom(mainNav, {
+            "offset": 0,
+            "tolerance": {
+            "up": 20,
+            "down": 10
+            }
+        });
         headroom.init(); 
     });
 

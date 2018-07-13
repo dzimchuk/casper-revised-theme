@@ -4,6 +4,9 @@
 {{!-- The big featured header --}}
 <header class="main-header {{#if @blog.cover_image}}" style="background-image: url({{@blog.cover_image}}){{else}}no-cover{{/if}}">
     <nav class="main-nav overlay clearfix">
+        <div class="inner">
+            {{navigation}}
+        </div>
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">

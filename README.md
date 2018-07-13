@@ -1,4 +1,12 @@
-# casper-revised
+# A fresh look on the classic 1.x [Casper](https://github.com/TryGhost/Casper) theme for [Ghost](https://github.com/TryGhost/Ghost).
+
+## Features
+
+- Floating top nav
+- Disqus comments
+- SVG icons
+- More social links
+- New footer
 
 ## Disqus
 
