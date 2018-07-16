@@ -23,7 +23,11 @@
             "down": 10
             }
         });
-        headroom.init(); 
+        headroom.init();
+
+        /* $('.main-nav .nav-hamburger').on('click', function() {
+            $('.main-nav').toggleClass('responsive');
+        }); */
     });
 
 })(jQuery);
