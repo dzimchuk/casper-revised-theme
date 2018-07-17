@@ -18,110 +18,22 @@
         background: #f5f8fa;
     }
 
-    /* post header */
     &.post-head {
-        height: 65vh;
-        min-height: 180px;
-
         &.no-cover {
-            height: 85px;
+            height: 75px;
             min-height: 0;
-            margin-bottom: 3.4rem;
+            margin-bottom: 4rem;
             background: transparent;
         }
-    }
-
-    /* tag header */
-    &.tag-head {
-        height: 40vh;
-        min-height: 180px;
-    }
-
-    /* author page header*/
-    &.author-head {
-        height: 40vh;
-        min-height: 180px;
-
-        &.no-cover {
-            height: 10vh;
-            min-height: 100px;
-            background: transparent;
-        }
-    }
-}
-
-/* On page2+ make all the headers smaller */
-/* .paged .main-header {
-    max-height: 30vh;
-} */
-
-@media only screen and (max-width: $tablet-width-threshold) {
-    .main-header {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        height: auto;
-        min-height: 240px;
-        height: 60vh;
-        padding: 15% 0;
-
-        &.post-head {
-            height:45vh;
-
-            &.no-cover {
-                height: 55px;
-                padding: 0;
-            }
-        }
-
-        &.tag-head {
-            height: 30vh;
-        }
-
-        &.author-head {
-            height: 30vh;
-
-            &.no-cover {
-                padding: 0;
-            }
-        }
-    }
-
-    .paged .main-header {
-        min-height: 180px;
-        padding: 10% 0;
     }
 }
 
 @media only screen and (max-width: $mobile-width-threshold) {
     .main-header {
-        margin-bottom: 15px;
-        height: 40vh;
-
-        &.no-cover {
-            height: 30vh;
-        }
-
         &.post-head {
-            height: 30vh;
-        }
-
-        &.tag-head {
-            height: 20vh;
-        }
-
-        &.author-head {
-            height: 20vh;
-        }
-    }
-
-    .paged .main-header {
-        max-height: 20vh;
-        min-height: 160px;
-        padding: 10% 0;
-
-        .page-description {
-            display: none;
+            &.no-cover {
+                margin-bottom: 2.4rem;
+            }
         }
     }
 }

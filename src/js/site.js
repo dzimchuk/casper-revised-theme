@@ -25,9 +25,9 @@
         });
         headroom.init();
 
-        /* $('.main-nav .nav-hamburger').on('click', function() {
-            $('.main-nav').toggleClass('responsive');
-        }); */
+        $('.main-nav .nav-hamburger-open, .main-nav .nav-hamburger-close').on('click', function() {
+            $('.main-nav').toggleClass('menu-opened');
+        });
     });
 
 })(jQuery);

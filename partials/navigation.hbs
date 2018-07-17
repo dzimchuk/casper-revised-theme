@@ -1,6 +1,9 @@
-<ul class="nav" role="menu">
-    {{#foreach navigation}}
-    <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="menuitem"><a href="{{url absolute="true"}}">{{label}}</a></li>
-    {{/foreach}}
-</ul>
-{{!-- <a href="javascript:void(0);" class="nav-hamburger">{{> "icons/bars-solid"}}</a> --}}
+<div class="nav-wrapper">
+    <ul class="nav" role="menu">
+        {{#foreach navigation}}
+        <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="menuitem"><a href="{{url absolute="true"}}">{{label}}</a></li>
+        {{/foreach}}
+    </ul>
+    <a href="javascript:void(0);" class="nav-hamburger-open">{{> "icons/bars"}}</a>
+    <a href="javascript:void(0);" class="nav-hamburger-close">{{> "icons/times"}}</a>
+</div>
