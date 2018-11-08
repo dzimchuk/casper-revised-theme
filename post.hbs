@@ -28,8 +28,8 @@
 
         <footer class="post-footer">
 
-        {{!-- Everything inside the #author tags pulls data from the author --}}
-        {{#author}}
+        {{!-- Everything inside the #primary_author tags pulls data from the primary author --}}
+        {{#primary_author}}
 
             {{#if profile_image}}
             <figure class="author-image">
@@ -51,7 +51,7 @@
                 </div>
             </section>
 
-        {{/author}}
+        {{/primary_author}}
 
             {{> "social-sharing"}}
 

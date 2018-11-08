@@ -47,8 +47,8 @@ gulp.task('build', ['styles', 'scripts'], function () {
 
 gulp.task('zip', ['build'], function() {
     var targetDir = 'dist/';
-    var themeName = require('./package.json').name;
-    var filename = themeName + '.zip';
+    var package = require('./package.json');
+    var filename = package.name + "-" + package.version + '.zip';
 
     return gulp.src([
         '**',

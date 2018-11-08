@@ -56,6 +56,47 @@
        -ms-transform: translateX(-50%); /* for IE9 */
        transform: translateX(-50%);
    }
+
+   .post-content {
+        .kg-width-wide {
+            position: relative;
+            width: 55vw;
+            min-width: 100%;
+            margin-left: calc(50% - 50vw);
+            margin-right: calc(50% - 50vw);
+            transform: translateX(calc(50vw - 50%));
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .kg-width-full {
+            position: relative;
+            width: 100vw;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+       figcaption {
+           font-family: "Open Sans", sans-serif;
+           font-size: 1.3rem;
+           line-height: 2.2rem;
+           color: #9EABB3;
+           text-align: center;
+       }
+
+       /* place holder image styles, see https://docs.ghost.org/api/handlebars-themes/editor/ */
+       .kg-gallery-container { width: 100vw; }
+       .kg-gallery-row { width: 100vw; }
+       .kg-gallery-image { margin: 0; }
+   }
    
    .footnotes {
        font-style: italic;
