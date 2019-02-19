@@ -1,7 +1,7 @@
 {
   "name": "casper-revised-theme",
   "description": "A revised version of the classic Casper theme for Ghost",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "engines": {
     "ghost": ">=2.0.0"
   },
