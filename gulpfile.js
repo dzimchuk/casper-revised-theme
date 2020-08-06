@@ -24,10 +24,10 @@ gulp.task('styles', function () {
     ];
     
     return gulp.src('./src/sass/**/*.scss')
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
         .pipe(concat('theme.css'))
-        .pipe(gulp.dest('./assets'));
+        .pipe(gulp.dest('./assets'));
 });
 
 gulp.task('scripts', function() {
@@ -38,14 +38,15 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('src/sass/**/*.scss', ['styles']);
-    gulp.watch('src/js/*.js', ['scripts']);
+    gulp.watch('src/sass/**/*.scss', gulp.series('styles'));
+    gulp.watch('src/js/*.js', gulp.series('scripts'));
 });
 
-gulp.task('build', ['styles', 'scripts'], function () {
-});
+gulp.task('build',  gulp.series('styles', 'scripts', function (done) {
+  done();
+}));
 
-gulp.task('zip', ['build'], function() {
+gulp.task('zip',  gulp.series('build', function() {
     var targetDir = 'dist/';
     var package = require('./package.json');
     var filename = package.name + "-" + package.version + '.zip';
@@ -59,8 +60,8 @@ gulp.task('zip', ['build'], function() {
     ])
         .pipe(zip(filename))
         .pipe(gulp.dest(targetDir));
-});
+}));
 
-gulp.task('default', ['build'], function () {
-    gulp.start('watch');
-});
+gulp.task('default',  gulp.series('build', 'watch', function (done) {
+    done();
+}));
